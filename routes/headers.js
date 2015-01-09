@@ -1,10 +1,10 @@
 var express = require('express');
 var router  = express.Router();
 
-/* GET user-agent */
+/* GET headers */
 router.get('/', function(req, res) {
   res.json({
-  	'user-agent': req.header('user-agent')
+    'headers': req.headers
   });
 });
 
